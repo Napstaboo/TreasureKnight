@@ -15,11 +15,19 @@ body{
 }
 
 .file{
-  background-image: url(/sprites/Folder.ico);
   background-color: none;
   max-width: 50px;
   max-height: 50px;
 }
+
+.file::before{
+  content: url(/sprites/File.ico);
+  height:30px;
+  width:30px;
+  position:relative;
+  left:20%;
+}
+
 
 .folder{
   background-color: none;
