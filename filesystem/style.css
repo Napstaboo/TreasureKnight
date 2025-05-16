@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+body{
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+.file{
+  background-image: url(/sprites/Folder.ico);
+  background-color: none;
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.folder{
+  background-color: none;
+  width:15%;
+  height:15%;
+  padding: 2%;
+}
+
+.folder::before{
+  content: url(/sprites/Folder.ico);
+  height:30px;
+  width:30px;
+}
+
+.window{
+  background-color: grey;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}

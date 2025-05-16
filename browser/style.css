@@ -1,0 +1,28 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+body{
+  display: flex;
+
+  /* This centers our sketch horizontally. */
+  justify-content: center;
+
+  /* This centers our sketch vertically. */
+  align-items: center;
+}
+
+canvas {
+  display: flex;
+}
+
+.window {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: grey;
+  min-width: 300px;
+  min-height: 100px;
+}
