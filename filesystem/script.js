@@ -22,7 +22,7 @@ class folder{
     elem.className = "folder";
     elem.id = this.name;
     elem.innerHTML = `<div class="label">${this.name}</div>`;
-    elem.addEventListener("click", () => {this.open(this.name)});
+    elem.addEventListener("dblclick", () => {this.open(this.name)});
     document.getElementById("window-content").appendChild(elem);
   }
 
@@ -65,7 +65,10 @@ class file {
     elem.id = `${this.name}.${this.extension}`
     elem.innerText = `${this.name}.${this.extension}`
     elem.draggable = true;
-    win.appendChild(elem);
+
+    if(win == undefined){
+      document.getElementById("window").append(elem);
+    } else{win.appendChild(elem);};
   }
 }
 
@@ -104,8 +107,21 @@ function showWindow(){
   newButton.addEventListener('click', newFolder);
 };
 
+function browser(){
+  web = document.createElement("iframe");
+  web.src = "browser/browser.html";
+  web.style = "width:100%; height:100%; position:absolute; top:0%; left:0%; z-index:10;";
+  document.body.appendChild(web);
+}
 
+function receiveFile(event){
+  console.log(event.data);
+  download = new file(event.data, "txt");
+  folders.push(download);
+  console.log(folders);
+}
 
+window.addEventListener("message", receiveFile, false);
 
 //list of folders. click on a folder replaces innerhtml with files in folder.
 //permanent button to return to main directory
@@ -117,8 +133,6 @@ var file1 = new file("file1", "txt");
 console.log(folders)
 main.append(file1);
 console.log(folders);
-
-
 
 //browser
 //filesystem
