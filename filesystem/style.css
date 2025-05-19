@@ -1,17 +1,32 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  height:100%;
 }
 
 body{
-  display: flex;
+  background-color: rgb(0, 141, 143);
+  width:100%;
 
   /* This centers our sketch horizontally. */
   justify-content: center;
 
   /* This centers our sketch vertically. */
   align-items: center;
+}
+
+span{
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    top: 2px;
+}
+
+span:hover{
+  background-color: blue;
+  color:white;  
 }
 
 .file{
@@ -21,7 +36,7 @@ body{
 }
 
 .file::before{
-  content: url(/sprites/File.ico);
+  content: url(sprites/File.ico);
   height:30px;
   width:30px;
   position:relative;
@@ -37,16 +52,80 @@ body{
 }
 
 .folder::before{
-  content: url(/sprites/Folder.ico);
+  content: url(sprites/Folder.ico);
   height:30px;
   width:30px;
 }
 
-.window{
-  background-color: grey;
-  width: 300px;
-  height: 200px;
+.icon{
+    background-color: none;
+  width:100px;
+  padding: 2%;
+  display: block;
+  align-content: center;
+}
+
+.label {
+  width:100%;
+}
+
+.computer::before{
+  content: url(sprites/MyComputer.ico);
+  margin-left:30%;
+}
+
+.bar {
+  height:25px;
+  width:99%;
+  margin:auto;
   display: flex;
+}
+
+
+.button {
+  height:22px;
+  width: 22px;
+}
+
+.window{
+  display: none;
+  position:absolute;
+  width:30%;
+  min-height:300px;
+  margin-left:30%;
+  background-color:rgb(199, 199, 199);
   flex-wrap: wrap;
   padding: 5px;
+}
+
+.content{
+  width:99%;
+  min-height: 280px;
+  margin:auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+
+.taskbar {
+  position:absolute;
+  bottom:0%;
+  height:5%;
+  width: 100%;
+  background-color: rgb(199, 199, 199);
+  box-shadow: 
+    
+    inset 0px 1px #dfdfdf,
+    
+    inset 0px 2px #fff;
+}
+
+.shadow{
+  background-color: rgb(199, 199, 199);
+  box-shadow: 
+  inset -1px -1px #000000,
+  inset 1px 1px #dfdfdf,
+  inset -2px -2px grey,
+  inset 2px 2px #fff;
 }
