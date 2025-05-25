@@ -121,6 +121,10 @@ function receiveFile(event){
   console.log(folders);
 }
 
+function close(event){
+  event.target.closest("window").remove()
+}
+
 window.addEventListener("message", receiveFile, false);
 
 //list of folders. click on a folder replaces innerhtml with files in folder.

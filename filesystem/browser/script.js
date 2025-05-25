@@ -1,4 +1,8 @@
-addressList = ["vim.html"]
+addressList = [
+    "vim.html", 
+    "gamewhalethreads/main.html"
+
+]
 
 
 
@@ -17,3 +21,4 @@ function search(){
         webpage.src = "404.html"
     }
 }
+
