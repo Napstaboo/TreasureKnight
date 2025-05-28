@@ -14,8 +14,8 @@ html, body{
 
 
 .header{
-    margin:auto;
-    width:100%;
+    margin-right: auto;
+    width:25%;
     height:25%;
     display:flex;
     justify-content: space-around;
@@ -37,12 +37,12 @@ html, body{
 
 .post{
     margin-bottom:5px;
+    width:99%;
     min-height:5%;
     height:fit-content;
     background-color:  rgba(80, 0, 69, 0.856);
     display:flex;
     border:2px solid salmon;
-    width:100%;
 }
 
 .title{
@@ -67,11 +67,18 @@ html, body{
     color:azure;
     margin-bottom:5px;
     min-height:5%;
-    width:100%;
+    width:99%;
     height:fit-content;
     background-color:  rgba(80, 0, 69, 0.856);
     display:flex;
     border:2px solid salmon;
     font-family: 'Times New Roman', Times, serif;
     font-size: x-large;
+}
+
+.content{
+    font-size: large;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
 }
