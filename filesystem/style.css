@@ -7,11 +7,8 @@ html, body {
 body{
   background-color: rgb(0, 141, 143);
   width:100%;
-
-  /* This centers our sketch horizontally. */
   justify-content: center;
 
-  /* This centers our sketch vertically. */
   align-items: center;
 }
 
@@ -74,6 +71,11 @@ span{
   margin-left:30%;
 }
 
+.Emulaton::before{
+  content: url(sprites/MyComputer.ico);
+  margin-left:30%;
+}
+
 .bar {
   height:25px;
   width:99%;
@@ -88,11 +90,12 @@ span{
 }
 
 .window{
-  display: none;
+  display: block;
   position:absolute;
+  top:30%;
+  left:30%;
   width:30%;
   min-height:300px;
-  margin-left:30%;
   background-color:rgb(199, 199, 199);
   flex-wrap: wrap;
   padding: 5px;
@@ -101,10 +104,12 @@ span{
 .content{
   width:99%;
   min-height: 280px;
+  height:95%;
   margin:auto;
   display: flex;
   flex-wrap: wrap;
   background-color: white;
+  flex-grow: 1;
 }
 
 

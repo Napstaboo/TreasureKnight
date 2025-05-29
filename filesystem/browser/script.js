@@ -17,19 +17,19 @@ function search(){
 
     if (i != -1){
         webpage.src = address;
+        console.log(address);
     }
 
     else{
-        webpage.src = "404.html";
+        webpage.src = "404.html"; 
     }
 };
 
 
-var nav = document.getElementById("nav");
-nav.addEventListener('click', closeBrowser);
-
-
-function closeBrowser(){
-    console.log("nbru");
+function Emulaton(){
+    computer = window.top;
+    console.log(computer.document.title);
+    const dataToSend = ["Emulaton", "exe"];
+    computer.postMessage(dataToSend, "*");
 }
 

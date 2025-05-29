@@ -1,5 +1,5 @@
 html, body{
-    background-image: url(017C.png);
+    background-image: url(comp021.gif);
     background-repeat: repeat;
     margin:0;
     height:100%;
@@ -40,7 +40,7 @@ html, body{
     width:99%;
     min-height:5%;
     height:fit-content;
-    background-color:  rgba(80, 0, 69, 0.856);
+    background-color:  rgba(80, 0, 33, 0.856);
     display:flex;
     border:2px solid salmon;
 }

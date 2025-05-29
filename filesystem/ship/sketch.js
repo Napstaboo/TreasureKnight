@@ -4,8 +4,8 @@ let shipSprite
 let treasureSprite
 
 function preload() {
-  shipSprite = loadImage("../sprites/ship.png");
-  treasureSprite = loadImage("../sprites/treasure.png");
+  shipSprite = loadImage("../sprites/close.png");
+  treasureSprite = loadImage("../sprites/minim.png");
 }
 
 function setup() {
@@ -15,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-  background(70, 100, 200)
+  background(100, 100, 200)
   getInput();
   
   if (treasure.yPos < 0){
