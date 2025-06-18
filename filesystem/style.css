@@ -71,6 +71,16 @@ span{
   margin-left:30%;
 }
 
+.Web::before{
+  content: url(sprites/web.ico);
+  margin-left:30%;
+}
+
+.Treasure::before{
+  content: url(sprites/Joy.ico);
+  margin-left:30%;
+}
+
 .Emulaton::before{
   content: url(sprites/MyComputer.ico);
   margin-left:30%;

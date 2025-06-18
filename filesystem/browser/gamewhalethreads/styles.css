@@ -6,7 +6,7 @@ html, body{
 }
 
 .main{
-    height: 75%;
+    height: 60%;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
@@ -14,19 +14,19 @@ html, body{
 
 
 .header{
-    margin-right: auto;
-    width:25%;
-    height:25%;
+    width:100%;
+    height:40%;
     display:flex;
     justify-content: space-around;
     align-items: stretch;
 }
 
+
 .left{
     margin-right:auto;   
     width:25%;
-    height:99%;
-    background-color: rgba(70, 113, 111, 0.759);
+    height:fit-content;
+    background-color: none;
 }
 
 .right{
