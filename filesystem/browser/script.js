@@ -33,3 +33,8 @@ function Emulaton(){
     computer.postMessage(dataToSend, "*");
 }
 
+document.getElementById("bookmark1").addEventListener('click', ()=>{
+    webpage = document.getElementById("webpage");
+    webpage.src = "gamewhalethreads/main.html";
+    document.getElementById("address").value = "gamewhalethreads/main.html";
+})
